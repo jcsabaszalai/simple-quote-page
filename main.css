@@ -13,17 +13,21 @@ div {
     background-size: cover;
     width: 100%;
     height: 100%;
+    min-width: 400px;
+
     font-family: "Julius Sans One", sans-serif;
-    padding-top: 12%;
     text-align: center;
+
+    padding-top: 12vh;
 }
 
 h1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  width: 90%;
+  text-transform: initial;
   margin: 0 auto;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  width: 70%;
+  line-height: 1.2;
+  
 }
 
 h1::first-letter {
@@ -31,6 +35,61 @@ h1::first-letter {
 }
 
 h3 {
+  font-family: "Crimson Pro", serif;
   font-style: italic;
-  margin-top: 1.5rem;
+  
+  font-size: 1rem;
+  margin-top: 1.2rem;
+ 
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 2rem;
+  text-align: center;
+
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  div {
+    padding-top: 10vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    width: 80%;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  div {
+    padding-top: 9vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    
+  }
+}
+
